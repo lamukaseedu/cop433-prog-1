@@ -56,3 +56,4 @@ for i in range(0, n): # Iterates through each hospital
                     blocking_pair = f"Hospital {i + 1} and student {current_student + 1} would prefer each other!"
                     print(f"UNSTABLE: {blocking_pair}")
                     exit()
+print("VALID STABLE")
