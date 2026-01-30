@@ -29,4 +29,9 @@ while (len(matches) < n): # Iterate as long as there is an unmatched hospital
   if hospital == n + 1:
     hospital = 1
 
-print(matches)
+with open("example.out", "w") as file: # Name of output file goes here
+  for h in range(1, n + 1):
+    s = matches[h]
+    file.write(str(h) + " " + str(s)) # Write hospital and matched student combination
+    if (h != n):
+      file.write("\n")
